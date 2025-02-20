@@ -1,4 +1,5 @@
 import { JSX } from "react";
+import FavoritesCard from "../favorites-card/favorites-card";
 
 function CitiesCard(): JSX.Element {
 return (
