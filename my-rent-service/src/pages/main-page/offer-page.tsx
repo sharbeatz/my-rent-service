@@ -1,6 +1,6 @@
-import { JSX } from "react/jsx-runtime";
 
-function OfferPage(): JSX.Element {
+
+function OfferPage() {
     return (
     <div className="page">
       <header className="header">
