@@ -7,7 +7,7 @@ export {Setting};
 const AppRoute = {
     Main: '/',
     Login: '/login',
-    Favorites: 'Offer',
+    Favorites: '/favorites',
     Offer: '/offer/:id',
     NotFound: '*',
 } as const;

@@ -1,11 +1,11 @@
-import { JSX } from "react";
+
 import CitiesCard from "../../components/cities-card/cities-card";
 
 type MainPageProps = {
     rentalOffersCount: number;
 }
 
-function MainPage({rentalOffersCount}: MainPageProps): JSX.Element {
+function MainPage({rentalOffersCount}: MainPageProps) {
     return (
         <div className="page page--gray page--main">
             <header className="header">

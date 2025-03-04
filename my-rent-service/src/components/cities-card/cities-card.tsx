@@ -1,7 +1,7 @@
-import { JSX } from "react";
+
 import FavoritesCard from "../favorites-card/favorites-card";
 
-function CitiesCard(): JSX.Element {
+function CitiesCard() {
 return (
     <article className="cities__card place-card">
     <div className="place-card__mark">

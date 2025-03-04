@@ -7,6 +7,7 @@ import OfferPage from "../../pages/main-page/offer-page";
 import NotFoundPage from "../../pages/main-page/not-found-page";
 import { AppRoute } from "../../const";
 import { AuthorizationStatus } from "../../const";
+import { PrivateRoute } from "../private-route/private-route";
 
 
 type AppMainPageProps = {
@@ -25,8 +26,12 @@ function App({rentalOffersCount}: AppMainPageProps) {
             element = {<LoginPage/>}
             />
 
-            <Route path = {AppRoute.Favorites}
-            element = {<FavoritesPage />} 
+            <Route path = { AppRoute.Favorites }
+            element = { <PrivateRoute
+            authorizationStatus = {AuthorizationStatus.NoAuth}>
+                <FavoritesPage />
+            </PrivateRoute>
+            }
             />
 
             <Route 
