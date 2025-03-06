@@ -1,12 +1,14 @@
 
 import CitiesCard from "../../components/cities-card/cities-card";
 import { Logo } from "../../components/logo/logo";
+import { FullOffer } from "../../types/offer";
 
 type MainPageProps = {
     rentalOffersCount: number;
+ 
 }
 
-function MainPage({rentalOffersCount}: MainPageProps) {
+function MainPage({rentalOffersCount }: MainPageProps) {
     return (
         <div className="page page--gray page--main">
             <header className="header">
@@ -120,11 +122,8 @@ function MainPage({rentalOffersCount}: MainPageProps) {
                                         <p className="place-card__type">Apartment</p>
                                     </div>
                                     
-                                    <CitiesCard />
                                     <CitiesCard/>
-                                    <CitiesCard/>
-                                    <CitiesCard/>
-                                    <CitiesCard/>
+
                                     
                             </div>
                         </section>
@@ -138,4 +137,4 @@ function MainPage({rentalOffersCount}: MainPageProps) {
     );
 }
 
-export default MainPage;
+export {MainPage};

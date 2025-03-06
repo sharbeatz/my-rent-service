@@ -18,4 +18,5 @@ const AuthorizationStatus = {
     NoAuth: 'NO_AUTH',
     Unknown: 'UNKNOWN',
 } as const;
+
 export {AuthorizationStatus}

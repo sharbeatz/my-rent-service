@@ -1,7 +1,16 @@
 
-import FavoritesCard from "../favorites-card/favorites-card";
+type CitiesCardProps = {
+    id: string;
+    title: string;
+    type: string;
+    price: number;
+    isPremium: boolean;
+    preivewImage: string;
+    raiting: number;
+}
 
-function CitiesCard() {
+
+function CitiesCard({id,title,type,price,isPremium,preivewImage,raiting}: CitiesCardProps) {
 return (
     <article className="cities__card place-card">
     <div className="place-card__mark">
