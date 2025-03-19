@@ -9,19 +9,25 @@ import { AppRoute } from "../../const";
 import { AuthorizationStatus } from "../../const";
 import { PrivateRoute } from "../private-route/private-route";
 import { FullOffer } from "../../types/offer";
+import { OfferList } from "../../types/offer";
+import { offersList } from "../../mocks/offer-list";
+
 
 
 type AppMainPageProps = {
     rentalOffersCount: number;
-    offers: FullOffer[]
+    offerList: OfferList[];
+    offers: FullOffer[];
 }
+
+
 
 function App({rentalOffersCount, offers}: AppMainPageProps) {
     return (
         <BrowserRouter>
         <Routes>
             <Route path = {AppRoute.Main}
-            element = {<MainPage rentalOffersCount={rentalOffersCount}/>} 
+            element = {<MainPage rentalOffersCount={rentalOffersCount} offerList = {offersList}/>} 
             />
 
             <Route path={AppRoute.Login}
@@ -38,12 +44,11 @@ function App({rentalOffersCount, offers}: AppMainPageProps) {
 
             <Route 
             path={AppRoute.Offer}
-            element = {<OfferPage />}
+            element = {<OfferPage offers={offers}/>}
             />
 
             <Route path= {AppRoute.NotFound}
             element={<NotFoundPage />}/>
-
 
         </Routes>
         </BrowserRouter>

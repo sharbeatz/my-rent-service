@@ -34,3 +34,18 @@ export type FullOffer = {
     maxAdults: number;
 };
 
+export type OfferList = {
+    id: string;
+    title: string;
+    type: string;
+    price: number;
+    city: CityOffer;
+    location: OfferLocation;
+    isPremium: boolean;
+    isFavorite: boolean;
+    rating: number;
+    previewImage: string;
+};
+
+
+
