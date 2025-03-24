@@ -2,14 +2,15 @@ import { FullOffer } from "../types/offer";
 
 const offers: FullOffer[] = [
     {
-        id: '1232332',
+        id: '2',
         title: 'Wood and stone place',
         description: "A new tema",
-        type: 'appartament',
+        type: 'Appartament',
         price: 370,
         images: [
-            'apartment-01.jpg',
-            'apartment-small-03.jpg',
+            '/img/apartment-01.jpg',
+            '/img/apartment-02.jpg',
+            '/img/apartment-03.jpg'
         ],
         city: {
             name: 'Paris',
@@ -46,9 +47,12 @@ const offers: FullOffer[] = [
         id: '1',
         title: 'Уютная квартира в центре',
         description: 'Прекрасная квартира с видом на парк',
-        type: 'apartment',
-        price: 120,
-        images: ['img/apartment-01.jpg'],
+        type: 'Apartment',
+        price: 130,
+        images: [
+          '/img/apartment-01.jpg',
+          '/img/apartment-02.jpg'
+        ],
         city: {
           name: 'Амстердам',
           location: {
@@ -66,13 +70,13 @@ const offers: FullOffer[] = [
         host: {
           avatarUrl: 'avatar-angelina.jpg',
           name: 'Angelina',
-          isPro: true
+          isPro: false
         },
         isFavorite: false,
         isPremium: true,
-        rating: 4.8,
+        rating: 4.5,
         bedrooms: 3,
-        maxAdults: 4
+        maxAdults: 3
       }
 
 ]
