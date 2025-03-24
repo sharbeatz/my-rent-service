@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 import FavoritesCard from "../favorites-card/favorites-card";
 
 type CitiesCardProps = {
@@ -12,8 +13,9 @@ type CitiesCardProps = {
 }
 
 function CitiesCard({id, title, type, price, isPremium, previewImage, rating}: CitiesCardProps) {
+    const [, setOfferId] = useState('');
 return (
-    <article className="cities__card place-card">
+    <article className="cities__card place-card" onMouseOver={() => setOfferId(id)} onMouseOut={()=> setOfferId('')}>
         {isPremium ? (<div className="place-card__mark">
        <span>Premium</span>
     </div>):

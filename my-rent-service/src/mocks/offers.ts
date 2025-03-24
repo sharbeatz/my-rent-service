@@ -34,7 +34,7 @@ const offers: FullOffer[] = [
         host: {
             isPro: true,
             name: 'Angelina',
-            avatarUrl: 'avatar-angelina.jpg'
+            avatarUrl: '/img/avatar-angelina.jpg'
         },
         isPremium: false,
         isFavorite: true,
@@ -68,8 +68,8 @@ const offers: FullOffer[] = [
         },
         goods: ['Wi-Fi', 'Кухня', 'Парковка'],
         host: {
-          avatarUrl: 'avatar-angelina.jpg',
-          name: 'Angelina',
+          avatarUrl: '/img/sonya-avatar.jpg',
+          name: 'Sonya',
           isPro: false
         },
         isFavorite: false,
