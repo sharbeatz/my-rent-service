@@ -1,6 +1,7 @@
 
 import { useState } from "react";
-import FavoritesCard from "../favorites-card/favorites-card";
+import { AppRoute } from "../../const";
+import { Link } from "react-router-dom";
 
 type CitiesCardProps = {
     id: string,
@@ -21,11 +22,10 @@ return (
     </div>):
     null
     }
-
     <div className="cities__image-wrapper place-card__image-wrapper">
-        <a href="#">
+        <Link to = { `${AppRoute.Offer}/${id}`}>
             <img className="place-card__image" src= {previewImage} width="260" height="200" alt="Place image" />
-        </a>
+        </Link>
     </div>
     <div className="place-card__info">
         <div className="place-card__price-wrapper">
@@ -47,7 +47,7 @@ return (
             </div>
         </div>
         <h2 className="place-card__name">
-            <a href="#">Beautiful &amp; {title}</a>
+            <a href="#">{title}</a>
         </h2>
         <p className="place-card__type">{type}</p>
     </div>

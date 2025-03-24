@@ -2,7 +2,7 @@ import { OfferList } from "../types/offer";
 
 export const offersList: OfferList[] = [
   {
-    'id': 'bbb06a0e-3f92-446d-9a68-cb64b5d38e2b',
+    'id': '1',
     'title': 'Wood and stone place',
     'type': 'apartment',
     'price': 370,
@@ -25,7 +25,7 @@ export const offersList: OfferList[] = [
     'rating': 4.9
   },
   {
-    'id': 'bc39b30e-b2b4-49a9-a4c9-378d8cb9ef6a',
+    'id': '2',
     'title': 'Modern city loft',
     'type': 'apartment',
     'price': 500,
@@ -48,7 +48,7 @@ export const offersList: OfferList[] = [
     'rating': 4.5
   },
   {
-    'id': 'fdb8d030-13b1-4f37-8aab-d6748355c076',
+    'id': '3',
     'title': 'Cozy countryside cabin',
     'type': 'house',
     'price': 250,
@@ -71,11 +71,11 @@ export const offersList: OfferList[] = [
     'rating': 3.5
   },
   {
-    'id': '7f345e80-51f7-4746-b99a-c76e7f1f6b22',
-    'title': 'Spacious beach house',
+    'id': '4',
+    'title': 'Легендарное Халева 3',
     'type': 'house',
-    'price': 1200,
-    'previewImage': '4.jpg',
+    'price': 5,
+    'previewImage': '/img/hata3-1.jpg',
     'city': {
       'name': 'Miami',
       'location': {
@@ -90,11 +90,11 @@ export const offersList: OfferList[] = [
       'zoom': 14
     },
     'isFavorite': false,
-    'isPremium': true,
-    'rating': 5.0
+    'isPremium': false,
+    'rating': 1.5,
   },
   {
-    'id': 'ccf849b3-d52d-4edb-bad9-d907ab7684cb',
+    'id': '5',
     'title': 'Luxury penthouse with a view',
     'type': 'apartment',
     'price': 1500,

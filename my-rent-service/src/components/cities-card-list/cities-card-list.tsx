@@ -12,7 +12,7 @@ function CitiesCardList({ offersList }: CitiesCardListProps) {
             {Array.from(offersList, (item) =>
                 <CitiesCard 
                     key={ item.id } 
-                    id= { item.id } 
+                    id = { item.id } 
                     title={ item.title } 
                     type={ item.type } 
                     price={ item.price } 
