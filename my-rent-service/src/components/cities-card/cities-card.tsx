@@ -14,10 +14,12 @@ type CitiesCardProps = {
 function CitiesCard({id, title, type, price, isPremium, previewImage, rating}: CitiesCardProps) {
 return (
     <article className="cities__card place-card">
-    <div className="place-card__mark">
-        {isPremium ? (<span>Premium</span>) : null}
-        
-    </div>
+        {isPremium ? (<div className="place-card__mark">
+       <span>Premium</span>
+    </div>):
+    null
+    }
+
     <div className="cities__image-wrapper place-card__image-wrapper">
         <a href="#">
             <img className="place-card__image" src= {previewImage} width="260" height="200" alt="Place image" />
@@ -38,7 +40,7 @@ return (
         </div>
         <div className="place-card__rating rating">
             <div className="place-card__stars rating__stars">
-                <span style={{ width: "80%" }}></span>
+                <span style={{ width: `${(rating/5)*100}%` }}></span>
                 <span className="visually-hidden">Rating</span>
             </div>
         </div>

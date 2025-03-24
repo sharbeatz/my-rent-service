@@ -1,6 +1,11 @@
 import { Logo } from "../../components/logo/logo";
+import { FullOffer } from "../../types/offer";
 
-function OfferPage() {
+type OfferPageProps = {
+  offers: FullOffer[];
+}
+
+function OfferPage({offers}: OfferPageProps) {
     return (
     <div className="page">
       <header className="header">
@@ -32,12 +37,20 @@ function OfferPage() {
 
       <main className="page__main page__main--offer">
         <section className="offer">
+
+          
           <div className="offer__gallery-container container">
+
             <div className="offer__gallery">
+              {offers[0].images.map( (item) => (<div className="offer__image-wrapper">
+                <img className="offer__image" src= {item} alt="Photo studio" />
+              </div>) )}
+
               <div className="offer__image-wrapper">
                 <img className="offer__image" src="img/room.jpg" alt="Photo studio" />
               </div>
-              <div className="offer__image-wrapper">
+              
+              {/* <div className="offer__image-wrapper">
                 <img className="offer__image" src="img/apartment-01.jpg" alt="Photo studio" />
               </div>
               <div className="offer__image-wrapper">
@@ -51,7 +64,8 @@ function OfferPage() {
               </div>
               <div className="offer__image-wrapper">
                 <img className="offer__image" src="img/apartment-01.jpg" alt="Photo studio" />
-              </div>
+              </div> */}
+
             </div>
           </div>
           <div className="offer__container container">

@@ -18,6 +18,7 @@ const offers: FullOffer[] = [
                 longitude: 2.432,
                 zoom: 13
             }
+           
         },
         location: {
             latitude: 48.8561,

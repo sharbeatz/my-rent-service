@@ -40,7 +40,7 @@ function App({rentalOffersCount, offers, offersList}: AppMainPageProps) {
 
             <Route 
             path={AppRoute.Offer}
-            element = {<OfferPage />}
+            element = {<OfferPage offers = {offers}/>}
             />
 
             <Route path= {AppRoute.NotFound}

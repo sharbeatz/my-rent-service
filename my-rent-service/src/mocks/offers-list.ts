@@ -6,7 +6,7 @@ export const offersList: OfferList[] = [
     'title': 'Wood and stone place',
     'type': 'apartment',
     'price': 370,
-    'previewImage': '1.jpg',
+    'previewImage': 'img/apartment-01.jpg',
     'city': {
       'name': 'Paris',
       'location': {
@@ -29,7 +29,7 @@ export const offersList: OfferList[] = [
     'title': 'Modern city loft',
     'type': 'apartment',
     'price': 500,
-    'previewImage': '2.jpg',
+    'previewImage': 'img/apartment-02.jpg',
     'city': {
       'name': 'London',
       'location': {
@@ -52,7 +52,7 @@ export const offersList: OfferList[] = [
     'title': 'Cozy countryside cabin',
     'type': 'house',
     'price': 250,
-    'previewImage': '3.jpg',
+    'previewImage': 'img/apartment-03.jpg',
     'city': {
       'name': 'Amsterdam',
       'location': {
@@ -68,7 +68,7 @@ export const offersList: OfferList[] = [
     },
     'isFavorite': true,
     'isPremium': false,
-    'rating': 4.7
+    'rating': 3.5
   },
   {
     'id': '7f345e80-51f7-4746-b99a-c76e7f1f6b22',
@@ -114,6 +114,6 @@ export const offersList: OfferList[] = [
     },
     'isFavorite': true,
     'isPremium': true,
-    'rating': 4.8
+    'rating': 4.5
   }
 ];

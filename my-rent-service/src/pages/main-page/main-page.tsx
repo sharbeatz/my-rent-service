@@ -96,7 +96,7 @@ function MainPage({rentalOffersCount, offersList}: MainPageProps) {
                                     <li className="places__option" tabIndex={0}>Top rated first</li>
                                 </ul>
                             </form>
-                            <div className="cities__places-list places__list tabs__content">
+                            {/* <div className="cities__places-list places__list tabs__content">
                                
                                     <div className="place-card__info">
                                         <div className="place-card__price-wrapper">
@@ -121,10 +121,10 @@ function MainPage({rentalOffersCount, offersList}: MainPageProps) {
                                             <a href="#">Nice, cozy, warm big bed apartment</a>
                                         </h2>
                                         <p className="place-card__type">Apartment</p>
-                                    </div>
+                                    </div> */}
                                     <CitiesCardList offersList={offersList}/>
                                     
-                            </div>
+                            {/* </div> */}
                         </section>
                         <div className="cities__right-section">
                             <section className="cities__map map"></section>
