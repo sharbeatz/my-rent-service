@@ -8,13 +8,15 @@ import NotFoundPage from "../../pages/main-page/not-found-page";
 import { AppRoute } from "../../const";
 import { AuthorizationStatus } from "../../const";
 import { PrivateRoute } from "../private-route/private-route";
+import { FullOffer } from "../../types/offer";
 
 
 type AppMainPageProps = {
     rentalOffersCount: number;
+    offers: FullOffer[];
 }
 
-function App({rentalOffersCount}: AppMainPageProps) {
+function App({rentalOffersCount, offers}: AppMainPageProps) {
     return (
         <BrowserRouter>
         <Routes>
