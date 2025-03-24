@@ -32,3 +32,18 @@ type OfferLocation = {
         images: string[]; 
         maxAdults: number; 
     };
+
+    export type OfferList = {
+        id: string; 
+        title: string; 
+        type: string; 
+        price: number; 
+        city: CityOffer; 
+        location: OfferLocation; 
+        isFavorite: boolean; 
+        isPremium: boolean; 
+        rating: number; 
+        previewImage: string;
+    }
+
+
