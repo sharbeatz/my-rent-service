@@ -89,7 +89,7 @@ export const offersList: OfferList[] = [
       'longitude': -80.1883,
       'zoom': 14
     },
-    'isFavorite': false,
+    'isFavorite': true,
     'isPremium': false,
     'rating': 1.5,
   },
@@ -112,7 +112,7 @@ export const offersList: OfferList[] = [
       'longitude': -73.935242,
       'zoom': 15
     },
-    'isFavorite': true,
+    'isFavorite': false,
     'isPremium': true,
     'rating': 4.5
   }
