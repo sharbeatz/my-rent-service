@@ -32,7 +32,7 @@ function App({rentalOffersCount, offers, offersList}: AppMainPageProps) {
 
             <Route path = { AppRoute.Favorites }
             element = { <PrivateRoute
-            authorizationStatus = {AuthorizationStatus.NoAuth}>
+            authorizationStatus = {AuthorizationStatus.Auth}>
                 <FavoritesPage />
             </PrivateRoute>
             }
