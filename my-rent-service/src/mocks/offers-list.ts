@@ -8,16 +8,16 @@ export const offersList: OfferList[] = [
     'price': 370,
     'previewImage': 'img/apartment-01.jpg',
     'city': {
-      'name': 'Paris',
+      'name': 'Amsterdam',
       'location': {
-        'latitude': 48.85661,
-        'longitude': 2.351499,
+        'latitude': 52.374,
+        'longitude': 4.88969,
         'zoom': 13
       }
     },
     'location': {
-      'latitude': 48.868610000000004,
-      'longitude': 2.342499,
+      'latitude': 52.3909553943508,
+      'longitude': 4.85309666406198,
       'zoom': 16
     },
     'isFavorite': true,
@@ -31,16 +31,16 @@ export const offersList: OfferList[] = [
     'price': 500,
     'previewImage': 'img/apartment-02.jpg',
     'city': {
-      'name': 'London',
+      'name': 'Amsterdam',
       'location': {
-        'latitude': 51.5074,
-        'longitude': -0.1278,
+        'latitude': 52.374,
+        'longitude': 4.88969,
         'zoom': 12
       }
     },
     'location': {
-      'latitude': 51.509865,
-      'longitude': -0.118092,
+      'latitude': 52.3609553943508,
+      'longitude': 4.85309666406198,
       'zoom': 14
     },
     'isFavorite': false,
@@ -56,14 +56,14 @@ export const offersList: OfferList[] = [
     'city': {
       'name': 'Amsterdam',
       'location': {
-        'latitude': 52.3676,
-        'longitude': 4.9041,
+        'latitude': 52.374,
+        'longitude': 4.88969,
         'zoom': 11
       }
     },
     'location': {
-      'latitude': 52.3784,
-      'longitude': 4.8879,
+      'latitude': 52.3909553943508,
+      'longitude': 4.929309666406198,
       'zoom': 15
     },
     'isFavorite': true,
@@ -77,16 +77,16 @@ export const offersList: OfferList[] = [
     'price': 5,
     'previewImage': '/img/hata3-1.jpg',
     'city': {
-      'name': 'Miami',
+      'name': 'Amsterdam',
       'location': {
-        'latitude': 25.7617,
-        'longitude': -80.1918,
+        'latitude': 52.374,
+        'longitude': 4.88969,
         'zoom': 10
       }
     },
     'location': {
-      'latitude': 25.7751,
-      'longitude': -80.1883,
+      'latitude': 52.3809553943508,
+      'longitude': 4.939309666406198,
       'zoom': 14
     },
     'isFavorite': true,
