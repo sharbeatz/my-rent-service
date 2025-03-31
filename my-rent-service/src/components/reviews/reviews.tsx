@@ -5,7 +5,7 @@ type ReviewsProps = {
 }
 
 function Reviews({reviewsData}: ReviewsProps) {
-    console.log(reviewsData)
+
     return(
         <li className="reviews__item">
         <div className="reviews__user user">

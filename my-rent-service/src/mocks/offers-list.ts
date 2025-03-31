@@ -6,7 +6,7 @@ export const offersList: OfferList[] = [
     'title': 'Wood and stone place',
     'type': 'apartment',
     'price': 370,
-    'previewImage': 'img/apartment-01.jpg',
+    'previewImage': '/img/apartment-01.jpg',
     'city': {
       'name': 'Amsterdam',
       'location': {
@@ -29,7 +29,7 @@ export const offersList: OfferList[] = [
     'title': 'Modern city loft',
     'type': 'apartment',
     'price': 500,
-    'previewImage': 'img/apartment-02.jpg',
+    'previewImage': '/img/apartment-02.jpg',
     'city': {
       'name': 'Amsterdam',
       'location': {
@@ -52,7 +52,7 @@ export const offersList: OfferList[] = [
     'title': 'Cozy countryside cabin',
     'type': 'house',
     'price': 250,
-    'previewImage': 'img/apartment-03.jpg',
+    'previewImage': '/img/apartment-03.jpg',
     'city': {
       'name': 'Amsterdam',
       'location': {
@@ -93,27 +93,5 @@ export const offersList: OfferList[] = [
     'isPremium': false,
     'rating': 1.5,
   },
-  {
-    'id': '5',
-    'title': 'Luxury penthouse with a view',
-    'type': 'apartment',
-    'price': 1500,
-    'previewImage': '5.jpg',
-    'city': {
-      'name': 'New York',
-      'location': {
-        'latitude': 40.7128,
-        'longitude': -74.0060,
-        'zoom': 10
-      }
-    },
-    'location': {
-      'latitude': 40.730610,
-      'longitude': -73.935242,
-      'zoom': 15
-    },
-    'isFavorite': false,
-    'isPremium': true,
-    'rating': 4.5
-  }
+
 ];

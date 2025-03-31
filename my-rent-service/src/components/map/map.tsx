@@ -8,8 +8,7 @@ type MapProps = {
 }
 
 function Map({location, city}: MapProps) {
-  console.log(location);
-  console.log(city)
+
   return (
     
       <MapContainer
