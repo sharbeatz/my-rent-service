@@ -5,6 +5,8 @@ import NotFoundPage from "./not-found-page";
 import { CommentForm } from "../../components/comment-form/comment-form";
 import { Review } from "../../types/review";
 import { ReviewsList } from "../../components/reviews-list/reviews-list";
+import { offersList } from "../../mocks/offers-list";
+import { Map } from "../../components/map/map";
 
 type OfferPageProps = {
   offers: FullOffer[];
@@ -194,7 +196,13 @@ function OfferPage({offers, reviewsData}: OfferPageProps) {
               </section>
             </div>
           </div>
-        <section className="offer__map map"></section>
+
+          <section className="offer__map map">
+            <Map
+            location = {offersList.map((item)=> item.location)}
+            city = {offersList.map((item) => item.city)}/>
+          </section>
+
         </section>
         <div className="container">
           <section className="near-places places">

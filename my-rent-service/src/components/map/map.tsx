@@ -11,12 +11,12 @@ function Map({location, city}: MapProps) {
   console.log(location);
   console.log(city)
   return (
-    <section className="cities__map map" style={{height: '500px'}} >
+    
       <MapContainer
         center={[52.374, 4.88969]}
         zoom={13}
         scrollWheelZoom={true}
-        style={{ height: '500px', width: '100%' }}
+        style={{ height: '600px', width: '100%' }}
       >
           <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -24,7 +24,6 @@ function Map({location, city}: MapProps) {
     />
     {location.map((item)=> <Marker position={[item.latitude, item.longitude]}></Marker>)}
       </MapContainer>
-    </section>
   )
 }
 

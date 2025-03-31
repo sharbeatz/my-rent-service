@@ -127,8 +127,10 @@ function MainPage({rentalOffersCount, offersList}: MainPageProps) {
                                     
                             {/* </div> */}
                         </section>
-                        <div className="cities__right-section">
+                        <div className="cities__right-section" >
+                            <section className="cities__map map" style={{ height: '600px', width: '100%' }}>
                             <Map location = {offersList.map((item) => item.location)} city = {offersList.map((item) => item.city)}/>
+                            </section>
                         </div>
                     </div>
                 </div>
