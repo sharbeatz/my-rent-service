@@ -10,15 +10,17 @@ import { AuthorizationStatus } from "../../const";
 import { PrivateRoute } from "../private-route/private-route";
 import { FullOffer } from "../../types/offer";
 import { OfferList } from "../../types/offer";
+import { Review } from "../../types/review";
 
 
 type AppMainPageProps = {
     rentalOffersCount: number;
     offersList: OfferList[];
     offers: FullOffer[];
+    reviewsData: Review[];
 }
 
-function App({rentalOffersCount, offers, offersList}: AppMainPageProps) {
+function App({rentalOffersCount, offers, offersList, reviewsData}: AppMainPageProps) {
     return (
         <BrowserRouter>
         <Routes>
@@ -40,7 +42,7 @@ function App({rentalOffersCount, offers, offersList}: AppMainPageProps) {
 
             <Route 
             path= {`${AppRoute.Offer}/:id`}
-            element = {<OfferPage offers = {offers}/>}
+            element = {<OfferPage offers = {offers} reviewsData= {reviewsData}/>}
             />
 
             <Route path= {AppRoute.NotFound}
