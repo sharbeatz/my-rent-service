@@ -81,4 +81,6 @@ const CITIES_LOCATION : CityOffer[] = [
     TopRated: 'Top rated first',
    };
 
-   export {CITIES_LOCATION, SortOffersType};
+   const iconUrl = "/img/marker-icon.webp";
+
+   export {CITIES_LOCATION, SortOffersType, iconUrl};
