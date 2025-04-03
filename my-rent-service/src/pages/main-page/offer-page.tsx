@@ -179,8 +179,8 @@ function OfferPage({offers, reviewsData}: OfferPageProps) {
 
           <section className="offer__map map">
             <Map
-            location = {filterOffersList.map((item)=> item.location)}
-            city = {filterOffersList.map((item) => item.city)}/>
+            locations={[offer.location]}
+            city = {offer.city}/>
           </section>
 
         </section>
