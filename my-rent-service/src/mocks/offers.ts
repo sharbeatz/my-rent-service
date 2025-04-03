@@ -1,154 +1,530 @@
-import { FullOffer } from "../types/offer";
+import { FullOffer } from '../types/offer';
 
-const offers: FullOffer[] = [
-    {
-        id: '1',
-        title: 'Wood and stone place',
-        description: "A new tema",
-        type: 'Appartament',
-        price: 370,
-        images: [
-            '/img/apartment-01.jpg',
-            '/img/apartment-02.jpg',
-            '/img/apartment-03.jpg'
-        ],
-        city: {
-            name: 'Paris',
-            location: {
-                latitude: 48.8561,
-                longitude: 2.432,
-                zoom: 13
-            }
-           
-        },
-        location: {
-            latitude: 48.8561,
-            longitude: 2.432,
-            zoom: 13
-        },
-        goods: [
-            'WiFi',
-            'Washer',
-            'Baby seat'
-        ],
-        host: {
-            isPro: true,
-            name: 'Angelina',
-            avatarUrl: '/img/avatar-angelina.jpg'
-        },
-        isPremium: false,
-        isFavorite: true,
-        rating: 4.9,
-        bedrooms: 2,
-        maxAdults: 3,
-    },
-
-    {
-        id: '2',
-        title: 'Уютная квартира в центре',
-        description: 'Прекрасная квартира с видом на парк',
-        type: 'Apartment',
-        price: 130,
-        images: [
-          '/img/apartment-01.jpg',
-          '/img/apartment-02.jpg'
-        ],
-        city: {
-          name: 'Амстердам',
-          location: {
-            latitude: 52.370216,
-            longitude: 4.895168,
-            zoom: 10
-          }
-        },
-        location: { 
-          latitude: 52.370216,
-          longitude: 4.895168,
-          zoom: 10
-        },
-        goods: ['Wi-Fi', 'Кухня', 'Парковка'],
-        host: {
-          avatarUrl: '/img/sonya-avatar.jpg',
-          name: 'Sonya',
-          isPro: false
-        },
-        isFavorite: false,
-        isPremium: true,
-        rating: 4.5,
-        bedrooms: 3,
-        maxAdults: 3
+export const offers: FullOffer[] = [
+  {
+    id: '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d',
+    title: 'Charming Parisian Escape',
+    description: 'A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families',
+    type: 'apartment',
+    price: 400,
+    city: {
+      name: 'Paris',
+      location: {
+        latitude: 48.85661,
+        longitude: 2.351499,
+        zoom: 13,
       },
-      {
-        id: '3',
-        title: 'Современные апартаменты с террасой',
-        description: 'Просторная квартира с видом на город',
-        type: 'Apartment',
-        price: 200,
-        images: [
-            '/img/apartment-04.jpg',
-            '/img/apartment-05.jpg'
-        ],
-        city: {
-            name: 'Барселона',
-            location: {
-                latitude: 41.3851,
-                longitude: 2.1734,
-                zoom: 12
-            }
-        },
-        location: {
-            latitude: 41.3801,
-            longitude: 2.1805,
-            zoom: 12
-        },
-        goods: ['Wi-Fi', 'Кофемашина', 'Кондиционер'],
-        host: {
-            avatarUrl: '/img/avatar-max.jpg',
-            name: 'Max',
-            isPro: true
-        },
-        isFavorite: true,
-        isPremium: false,
-        rating: 4.7,
-        bedrooms: 1,
-        maxAdults: 2
     },
-    {
-        id: '4',
-        title: 'Стильный лофт в центре Берлина',
-        description: 'Просторный лофт с панорамными окнами',
-        type: 'Loft',
-        price: 250,
-        images: [
-            '/img/hata3-1.jpg',
-            '/img/hata3-2.jpg'
-        ],
-        city: {
-            name: 'Берлин',
-            location: {
-                latitude: 52.5200,
-                longitude: 13.4050,
-                zoom: 13
-            }
-        },
-        location: {
-            latitude: 52.5155,
-            longitude: 13.3875,
-            zoom: 13
-        },
-        goods: ['Wi-Fi', 'Камин', 'Парковка'],
-        host: {
-            avatarUrl: '/img/Lenar.jpg',
-            name: 'Lenar & Arthur',
-            isPro: false
-        },
-        isFavorite: false,
-        isPremium: true,
-        rating: 4.8,
-        bedrooms: 2,
-        maxAdults: 4
-    }
+    location: {
+      latitude: 48.85884,
+      longitude: 2.34703,
+      zoom: 13,
+    },
+    isFavorite: true,
+    isPremium: false,
+    rating: 4.9,
+    bedrooms: 2,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Angelina',
+      avatarUrl: '/img/avatar-angelina.jpg',
+      isPro: true,
+    },
+    images: [
+      '/img/wood-and-stone-place-1.png',
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/studio-01.jpg',
+    ],
+    maxAdults: 3,
+  },
+  {
+    id: 'p1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6',
+    title: 'Cozy Parisian Retreat',
+    description:
+      'A cozy and intimate Parisian retreat, offering a comfortable stay in the heart of the city.',
+    type: 'room',
+    price: 160,
+    city: {
+      name: 'Paris',
+      location: {
+        latitude: 48.85661,
+        longitude: 2.351499,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 48.85750,
+      longitude: 2.34921,
+      zoom: 13,
+    },
+    isFavorite: false,
+    isPremium: true,
+    rating: 4.6,
+    bedrooms: 1,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Arslan',
+      avatarUrl: '/img/avatar-john.png',
+      isPro: true,
+    },
+    images: [
+      '/img/wood-and-stone-place-1.png',
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/studio-01.jpg',
+    ],
+    maxAdults: 2,
+  },
+  {
+    id: 'p2b3c4d5-f6g7-8h9i-0j1k-l2m3n4o5p6q7',
+    title: 'Elegant Louvre Suite',
+    description: 'A luxurious suite with views of the Louvre and the Seine.',
+    type: 'apartment',
+    price: 300,
+    city: {
+      name: 'Paris',
+      location: {
+        latitude: 48.85661,
+        longitude: 2.351499,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 48.85992,
+      longitude: 2.34078,
+      zoom: 13,
+    },
+    isFavorite: true,
+    isPremium: true,
+    rating: 4.8,
+    bedrooms: 2,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Sonya',
+      avatarUrl: '/img/avatar-michael.png',
+      isPro: true,
+    },
+    images: [
+      '/img/wood-and-stone-place-1.png',
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/studio-01.jpg',
+    ],
+    maxAdults: 3,
+  },
+  {
+    id: 'p3c4d5e6-f7g8-9h0i-1j2k-l3m4n5o6p7q8',
+    title: 'Montmartre Creative Loft',
+    description:
+      'An artistic loft in the heart of Montmartre, perfect for creative souls.',
+    type: 'loft',
+    price: 240,
+    city: {
+      name: 'Paris',
+      location: {
+        latitude: 48.85661,
+        longitude: 2.351499,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 48.88663,
+      longitude: 2.34300,
+      zoom: 13,
+    },
+    isFavorite: false,
+    isPremium: false,
+    rating: 4.7,
+    bedrooms: 3,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Maria',
+      avatarUrl: '/img/avatar-emily.jpg',
+      isPro: true,
+    },
+    images: [
+      '/img/wood-and-stone-place-1.png',
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/studio-01.jpg',
+    ],
+    maxAdults: 3,
+  },
 
+  {
+    id: 'a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6',
+    title: 'Central Cologne Charm',
+    description: 'A charming apartment located in the heart of Cologne.',
+    type: 'apartment',
+    price: 130,
+    city: {
+      name: 'Cologne',
+      location: {
+        latitude: 50.937531,
+        longitude: 6.960279,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 50.938361,
+      longitude: 6.959974,
+      zoom: 13,
+    },
+    isFavorite: false,
+    isPremium: true,
+    rating: 4.7,
+    bedrooms: 2,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Эмили',
+      avatarUrl: '/img/avatar-john.png',
+      isPro: false,
+    },
+    images: [
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/apartment-04.jpg',
+      '/img/apartment-05.jpg',
+    ],
+    maxAdults: 3,
+  },
+  {
+    id: 'c1d2e3f4-g5h6-7i8j-9k0l-m1n2o3p4q5r6',
+    title: 'Cathedral Loft Cologne',
+    description: 'A loft with cathedral views in historic Cologne.',
+    type: 'loft',
+    price: 190,
+    city: {
+      name: 'Cologne',
+      location: {
+        latitude: 50.937531,
+        longitude: 6.960279,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 50.939842,
+      longitude: 6.958321,
+      zoom: 13,
+    },
+    isFavorite: true,
+    isPremium: false,
+    rating: 4.5,
+    bedrooms: 3,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Эмили',
+      avatarUrl: '/img/avatar-emily.jpg',
+      isPro: false,
+    },
+    images: [
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/apartment-04.jpg',
+      '/img/apartment-05.jpg',
+    ],
+    maxAdults: 3,
+  },
+  {
+    id: 'c2d3e4f5-g6h7-8i9j-0k1l-m2n3o4p5q6r7',
+    title: 'Riverside Cologne Apartment',
+    description: 'Apartment by the Rhine, offering scenic views of Cologne.',
+    type: 'apartment',
+    price: 230,
+    city: {
+      name: 'Cologne',
+      location: {
+        latitude: 50.937531,
+        longitude: 6.960279,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 50.936123,
+      longitude: 6.963456,
+      zoom: 13,
+    },
+    isFavorite: false,
+    isPremium: true,
+    rating: 4.4,
+    bedrooms: 2,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Эмили',
+      avatarUrl: '/img/avatar-emily.jpg',
+      isPro: false,
+    },
+    images: [
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/apartment-04.jpg',
+      '/img/apartment-05.jpg',
+    ],
+    maxAdults: 3,
+  },
+  {
+    id: 'c3d4e5f6-g7h8-9i0j-1k2l-m3n4o5p6q7r8',
+    title: 'Historic Cologne Guesthouse',
+    description: 'A guesthouse in the old town of Cologne with historic charm.',
+    type: 'house',
+    price: 180,
+    city: {
+      name: 'Cologne',
+      location: {
+        latitude: 50.937531,
+        longitude: 6.960279,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 50.935456,
+      longitude: 6.957890,
+      zoom: 13,
+    },
+    isFavorite: true,
+    isPremium: false,
+    rating: 4.3,
+    bedrooms: 3,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Эмили',
+      avatarUrl: '/img/avatar-emily.jpg',
+      isPro: false,
+    },
+    images: [
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/apartment-04.jpg',
+      '/img/apartment-05.jpg',
+    ],
+    maxAdults: 4,
+  },
+
+
+  {
+    id: 'f6g7h8i9-j0k1-l2m3-n4o5-p6q7r8s9t0u1',
+    title: 'Contemporary Brussels Loft',
+    description: 'A modern loft in Brussels with contemporary design.',
+    type: 'loft',
+    price: 210,
+    city: {
+      name: 'Brussels',
+      location: {
+        latitude: 50.850346,
+        longitude: 4.351721,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 50.850169,
+      longitude: 4.351695,
+      zoom: 13,
+    },
+    isFavorite: true,
+    isPremium: false,
+    rating: 4.5,
+    bedrooms: 3,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Эмили',
+      avatarUrl: '/img/avatar-emily.jpg',
+      isPro: false,
+    },
+    images: [
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/apartment-04.jpg',
+      '/img/apartment-05.jpg',
+    ],
+    maxAdults: 3,
+  },
+  {
+    id: 'b1c2d3e4-f5g6-7h8i-9j0k-l1m2n3o4p5q6',
+    title: 'EU District Urban Studio',
+    description: 'A compact urban studio located in the EU District of Brussels.',
+    type: 'room',
+    price: 120,
+    city: {
+      name: 'Brussels',
+      location: {
+        latitude: 50.850346,
+        longitude: 4.351721,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 50.851234,
+      longitude: 4.353456,
+      zoom: 13,
+    },
+    isFavorite: false,
+    isPremium: false,
+    rating: 4.2,
+    bedrooms: 1,
+    goods: [
+      'Heating',
+      'Wi-Fi',
+      'Fridge',
+      'Laptop friendly workspace',
+      'Baby seat',
+      'Air conditioning',
+      'Washer',
+      'Towels',
+      'Dishwasher',
+      'Kitchen',
+      'Washing machine',
+      'Breakfast',
+      'Coffee machine',
+    ],
+    host: {
+      name: 'Эмили',
+      avatarUrl: '/img/avatar-emily.jpg',
+      isPro: false,
+    },
+    images: [
+      '/img/apartment-01.jpg',
+      '/img/apartment-02.jpg',
+      '/img/apartment-03.jpg',
+      '/img/apartment-04.jpg',
+      '/img/apartment-05.jpg',
+    ],
+    maxAdults: 2,
+  },
 ]
-
-export {offers};
+  
