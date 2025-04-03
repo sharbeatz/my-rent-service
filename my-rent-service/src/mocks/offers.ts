@@ -45,7 +45,7 @@ export const offers: FullOffer[] = [
       isPro: true,
     },
     images: [
-      '/img/wood-and-stone-place-1.png',
+   
       '/img/apartment-01.jpg',
       '/img/apartment-02.jpg',
       '/img/apartment-03.jpg',
@@ -98,7 +98,7 @@ export const offers: FullOffer[] = [
       isPro: true,
     },
     images: [
-      '/img/wood-and-stone-place-1.png',
+
       '/img/apartment-01.jpg',
       '/img/apartment-02.jpg',
       '/img/apartment-03.jpg',
@@ -150,7 +150,7 @@ export const offers: FullOffer[] = [
       isPro: true,
     },
     images: [
-      '/img/wood-and-stone-place-1.png',
+   
       '/img/apartment-01.jpg',
       '/img/apartment-02.jpg',
       '/img/apartment-03.jpg',
@@ -203,7 +203,7 @@ export const offers: FullOffer[] = [
       isPro: true,
     },
     images: [
-      '/img/wood-and-stone-place-1.png',
+
       '/img/apartment-01.jpg',
       '/img/apartment-02.jpg',
       '/img/apartment-03.jpg',
@@ -259,8 +259,7 @@ export const offers: FullOffer[] = [
       '/img/apartment-01.jpg',
       '/img/apartment-02.jpg',
       '/img/apartment-03.jpg',
-      '/img/apartment-04.jpg',
-      '/img/apartment-05.jpg',
+
     ],
     maxAdults: 3,
   },
@@ -521,8 +520,7 @@ export const offers: FullOffer[] = [
       '/img/apartment-01.jpg',
       '/img/apartment-02.jpg',
       '/img/apartment-03.jpg',
-      '/img/apartment-04.jpg',
-      '/img/apartment-05.jpg',
+
     ],
     maxAdults: 2,
   },
@@ -587,7 +585,7 @@ export const offers: FullOffer[] = [
       avatarUrl: '/img/avatar-mark.png',
       isPro: false,
     },
-    images: ['/img/wood-and-stone-place-1.png', '/img/apartment-02.jpg'],
+    images: ['/img/apartment-02.jpg'],
     maxAdults: 6,
   },
   {
@@ -651,8 +649,75 @@ export const offers: FullOffer[] = [
       avatarUrl: '/img/avatar-daniel.png',
       isPro: true,
     },
-    images: ['/img/wood-and-stone-place-1.png', '/img/apartment-01.jpg'],
+    images: ['/img/apartment-01.jpg'],
     maxAdults: 8,
   },
+
+  {
+    id: 'h2i3j4k5-l6m7-n8o9-p0q1-r2s3t4u5v6w7',
+    title: 'Scenic Alster Retreat',
+    description: 'An exclusive penthouse offering stunning panoramic views of Amsterdam.',
+    type: 'apartment',
+    price: 400,
+    city: {
+      name: 'Amsterdam',
+      location: {
+        latitude: 52.3770,
+        longitude: 4.8970,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 52.3778,
+      longitude: 4.8965,
+      zoom: 13,
+    },
+    isFavorite: true,
+    isPremium: true,
+    rating: 4.9,
+    bedrooms: 4,
+    goods: ['Wi-Fi', 'Dishwasher', 'Air conditioning', 'Kitchen', 'Washer', 'Towels', 'Coffee machine'],
+    host: {
+      name: 'Daniel',
+      avatarUrl: '/img/avatar-daniel.png',
+      isPro: true,
+    },
+    images: ['/img/apartment-01.jpg'],
+    maxAdults: 8,
+  },
+  {
+    id: 'h3i4j5k6-l7m8-n9o0-p1q2-r3s4t5u6v7w8',
+    title: 'Vibrant Sternschanze Room',
+    description: 'An exclusive penthouse offering stunning panoramic views of Amsterdam.',
+    type: 'apartment',
+    price: 400,
+    city: {
+      name: 'Amsterdam',
+      location: {
+        latitude: 52.3770,
+        longitude: 4.8970,
+        zoom: 13,
+      },
+    },
+    location: {
+      latitude: 52.3778,
+      longitude: 4.8965,
+      zoom: 13,
+    },
+    isFavorite: true,
+    isPremium: true,
+    rating: 4.9,
+    bedrooms: 4,
+    goods: ['Wi-Fi', 'Dishwasher', 'Air conditioning', 'Kitchen', 'Washer', 'Towels', 'Coffee machine'],
+    host: {
+      name: 'Daniel',
+      avatarUrl: '/img/avatar-daniel.png',
+      isPro: true,
+    },
+    images: ['/img/apartment-02.jpg'],
+    maxAdults: 8,
+  },
+
+
 ]
   

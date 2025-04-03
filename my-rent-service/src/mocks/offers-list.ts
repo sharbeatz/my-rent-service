@@ -76,7 +76,7 @@ export const offersList: OfferList[] = [
     title: 'Montmartre Creative Loft',
     type: 'loft',
     price: 240,
-    previewImage: '/img/apartment-04.jpg',
+    previewImage: '/img/apartment-04.webp',
     city: {
       name: 'Paris',
       location: {
@@ -101,7 +101,7 @@ export const offersList: OfferList[] = [
     title: "Central Cologne Charm",
     type: "apartment",
     price: 130,
-    previewImage: '/img/apartment-05.jpg',
+    previewImage: '/img/apartment-05.webp',
     city: {
       name: "Cologne",
       location: {
@@ -124,7 +124,7 @@ export const offersList: OfferList[] = [
     title: "Cathedral Loft Cologne",
     type: "loft",
     price: 190,
-    previewImage: '/img/apartment-05.jpg',
+    previewImage: '/img/i (4).webp',
     city: {
       name: "Cologne",
       location: {
@@ -218,7 +218,7 @@ export const offersList: OfferList[] = [
     title: "EU District Urban Studio",
     type: "room",
     price: 120,
-    previewImage: '/img/apartment-04.jpg',
+    previewImage: '/img/apartment-01.jpg',
     city: {
       name: "Brussels",
       location: {
@@ -241,7 +241,7 @@ export const offersList: OfferList[] = [
     title: "Art Nouveau Heritage Apartment",
     type: "apartment",
     price: 250,
-    previewImage: '/img/apartment-04.jpg',
+    previewImage: '/img/hata4.jpg',
     city: {
       name: "Brussels",
       location: {
@@ -259,29 +259,7 @@ export const offersList: OfferList[] = [
     isPremium: true,
     rating: 4.7,
   },
-  {
-    id: "b3c4d5e6-f7g8-9h0i-1j2k-l3m4n5o6p7q8",
-    title: "Sablon District Penthouse",
-    type: "apartment",
-    price: 340,
-    previewImage: '/img/apartment-05.jpg',
-    city: {
-      name: "Brussels",
-      location: {
-        latitude: 50.850346,
-        longitude: 4.351721,
-        zoom: 13
-      }
-    },
-    location: {
-      latitude: 50.847654,
-      longitude: 4.355678,
-      zoom: 13
-    },
-    isFavorite: false,
-    isPremium: true,
-    rating: 4.8,
-  },
+  
 
   // Amsterdam (4 предложения)
   {
@@ -377,53 +355,7 @@ export const offersList: OfferList[] = [
     rating: 4.4,
   },
 
-  // Hamburg (4 предложения)
-  {
-    id: "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9",
-    title: "Exclusive Hamburg Penthouse",
-    type: "apartment",
-    price: 470,
-    previewImage: '/img/apartment-04.jpg',
-    city: {
-      name: "Hamburg",
-      location: {
-        latitude: 53.551086,
-        longitude: 9.993682,
-        zoom: 13
-      }
-    },
-    location: {
-      latitude: 53.550341,
-      longitude: 9.992765,
-      zoom: 13
-    },
-    isFavorite: false,
-    isPremium: true,
-    rating: 4.8,
-  },
-  {
-    id: "h1i2j3k4-l5m6-n7o8-p9q0-r1s2t3u4v5w6",
-    title: "HafenCity Modern Apartment",
-    type: "apartment",
-    price: 330,
-    previewImage: '/img/apartment-05.jpg',
-    city: {
-      name: "Hamburg",
-      location: {
-        latitude: 53.551086,
-        longitude: 9.993682,
-        zoom: 13
-      }
-    },
-    location: {
-      latitude: 53.552123,
-      longitude: 9.995456,
-      zoom: 13
-    },
-    isFavorite: true,
-    isPremium: false,
-    rating: 4.5,
-  },
+ 
   {
     id: "h2i3j4k5-l6m7-n8o9-p0q1-r2s3t4u5v6w7",
     title: "Scenic Alster Retreat",

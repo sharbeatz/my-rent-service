@@ -12,6 +12,7 @@ import { SortOffer } from "../../types/sort";
 import { SortOptions } from "../../components/sort-options/sort-options";
 import { SortOffersType } from "../../const";
 import { sortOffersByType } from "../../utils";
+import { MainPageEmpty } from "../../components/main-page-empty/main-page-empty";
 
 
 type MainPageProps = {
@@ -70,6 +71,7 @@ function MainPage() {
                         <CitiesList selectedCity={selectedCity}/>
                     </section>
                 </div>
+                {selectedCityOffers.length === 0 ? <MainPageEmpty /> :
                 <div className="cities">
                     <div className="cities__places-container container">
                         <section className="cities__places places">
@@ -83,14 +85,15 @@ function MainPage() {
                         <div className="cities__right-section" >
                             <section className="cities__map map" style={{ height: '600px', width: '100%' }}>
                             <Map   locations={selectedCityOffers.map((item) => item.location)} 
-  city={selectedCity}/>
+  city={selectedCity} />
                             </section>
                         </div>
                     </div>
-                </div>
+                </div>}
             </main>
         </div>
     );
 }
+
 
 export default MainPage;
