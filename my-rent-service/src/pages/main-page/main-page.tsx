@@ -4,13 +4,32 @@ import CitiesCard from "../../components/cities-card/cities-card";
 import { Logo } from "../../components/logo/logo";
 import { OfferList } from "../../types/offer";
 import { Map } from "../../components/map/map";
+import { CitiesList } from "../../components/cities-list/cities-list";
+import { useAppSelector } from "../../hooks";
+import { getOffersByCity } from "../../utils";
+import { useState } from "react";
+
 
 type MainPageProps = {
     rentalOffersCount: number;
     offersList: OfferList[];
 }
 
-function MainPage({rentalOffersCount, offersList}: MainPageProps) {
+function MainPage() {
+    const selectedCity = useAppSelector((state) => state.city);
+    const offersList = useAppSelector((state) => state.offers);
+    const selectedCityOffers = getOffersByCity(selectedCity?.name ?? '', offersList);
+    const rentalOffersCount = selectedCityOffers.length;
+  
+    const [selectedOffer, setSelectedOffer] = useState<OfferList | undefined>(
+      undefined
+    );
+    
+    const handleListItemHover = (offerId: string) => {
+        const currentOffer = offersList.find((offer) => offer.id === offerId);
+        setSelectedOffer(currentOffer);
+      };
+
     return (
         <div className="page page--gray page--main">
             <header className="header">
@@ -43,38 +62,7 @@ function MainPage({rentalOffersCount, offersList}: MainPageProps) {
                 <h1 className="visually-hidden">Cities</h1>
                 <div className="tabs">
                     <section className="locations container">
-                        <ul className="locations__list tabs__list">
-                            <li className="locations__item">
-                                <a className="locations__item-link tabs__item" href="#">
-                                    <span>Paris</span>
-                                </a>
-                            </li>
-                            <li className="locations__item">
-                                <a className="locations__item-link tabs__item" href="#">
-                                    <span>Cologne</span>
-                                </a>
-                            </li>
-                            <li className="locations__item">
-                                <a className="locations__item-link tabs__item" href="#">
-                                    <span>Brussels</span>
-                                </a>
-                            </li>
-                            <li className="locations__item">
-                                <a className="locations__item-link tabs__item tabs__item--active">
-                                    <span>Amsterdam</span>
-                                </a>
-                            </li>
-                            <li className="locations__item">
-                                <a className="locations__item-link tabs__item" href="#">
-                                    <span>Hamburg</span>
-                                </a>
-                            </li>
-                            <li className="locations__item">
-                                <a className="locations__item-link tabs__item" href="#">
-                                    <span>Dusseldorf</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <CitiesList selectedCity={selectedCity}/>
                     </section>
                 </div>
                 <div className="cities">
@@ -97,35 +85,10 @@ function MainPage({rentalOffersCount, offersList}: MainPageProps) {
                                     <li className="places__option" tabIndex={0}>Top rated first</li>
                                 </ul>
                             </form>
-                            {/* <div className="cities__places-list places__list tabs__content">
-                               
-                                    <div className="place-card__info">
-                                        <div className="place-card__price-wrapper">
-                                            <div className="place-card__price">
-                                                <b className="place-card__price-value">&euro;180</b>
-                                                <span className="place-card__price-text">&#47;&nbsp;night</span>
-                                            </div>
-                                            <button className="place-card__bookmark-button button" type="button">
-                                                <svg className="place-card__bookmark-icon" width="18" height="19">
-                                                    <use href="#icon-bookmark"></use>
-                                                </svg>
-                                                <span className="visually-hidden">To bookmarks</span>
-                                            </button>
-                                        </div>
-                                        <div className="place-card__rating rating">
-                                            <div className="place-card__stars rating__stars">
-                                                <span style={{ width: "100%" }}></span>
-                                                <span className="visually-hidden">Rating</span>
-                                            </div>
-                                        </div>
-                                        <h2 className="place-card__name">
-                                            <a href="#">Nice, cozy, warm big bed apartment</a>
-                                        </h2>
-                                        <p className="place-card__type">Apartment</p>
-                                    </div> */}
+
                                     <CitiesCardList offersList={offersList}/>
                                     
-                            {/* </div> */}
+                           
                         </section>
                         <div className="cities__right-section" >
                             <section className="cities__map map" style={{ height: '600px', width: '100%' }}>

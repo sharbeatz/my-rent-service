@@ -12,6 +12,8 @@ import { FullOffer } from "../../types/offer";
 import { OfferList } from "../../types/offer";
 import { Review } from "../../types/review";
 
+// import { getOffers } from "../../utils";
+
 
 type AppMainPageProps = {
     rentalOffersCount: number;
@@ -21,11 +23,12 @@ type AppMainPageProps = {
 }
 
 function App({rentalOffersCount, offers, offersList, reviewsData}: AppMainPageProps) {
+    // getOffers("Amsterdam", offersList)
     return (
         <BrowserRouter>
         <Routes>
             <Route path = {AppRoute.Main}
-            element = {<MainPage rentalOffersCount={rentalOffersCount} offersList = {offersList}/>} 
+            element = {<MainPage />} 
             />
 
             <Route path={AppRoute.Login}
