@@ -76,7 +76,7 @@ function MainPage() {
                             <h2 className="visually-hidden">Places</h2>
                             <b className="places__found">{rentalOffersCount} places to stay in {selectedCity?.name}</b>
                                 <SortOptions activeSorting={activeSort} onChange={(newSorting) => setActiveSort(newSorting) } />
-                                    <CitiesCardList block = {blockName.AllPages} offersList={sortOffersByType(selectedCityOffers, activeSort)}  onListItemHover={handleListItemHover}/>
+                                    <CitiesCardList offersList={sortOffersByType(selectedCityOffers, activeSort)}  />
                                     
                            
                         </section>
